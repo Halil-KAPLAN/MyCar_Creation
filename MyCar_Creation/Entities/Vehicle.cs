@@ -1,0 +1,18 @@
+﻿using MyCar_Creation.Model;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MyCar_Creation.Entities
+{
+    public class Vehicle:BaseModel
+    {
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public DateTime ModelYear { get; set; }
+
+        [Column(TypeName ="decimal(18,4)")]
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public Guid CategoryId { get; set; }
+        public Category Category { get; set; }
+    }
+}
