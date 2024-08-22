@@ -6,7 +6,6 @@
         {
             Id = Guid.NewGuid();
             CreadtedDate = DateTime.Now;
-
         }
 
         public Guid Id { get; set; }

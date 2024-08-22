@@ -37,7 +37,7 @@ namespace MyCar_Creation.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreadtedDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("VehicleCount")
                         .HasColumnType("int");
